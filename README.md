@@ -29,6 +29,9 @@ The idea of a class-unique stat eventually turned into Mastery, but I never like
 *Classes should be differentiated with spells and talents, all stats should be equal across all classes*  
 These 3 stats are to be removed and replaced by pure stats doing 1 job and 1 job only.  
 
+### Attack Power
+As a consequence of the latter point, Attack Power will now be normalized with Spell Power.
+
 ### Penetration
 WotLK saw great unification in the stat system; haste/spell hast, crit/spell crit and hit/spell hit were all unified into a single secondary statistic, as the TBC model was severely harming hybrid spec.
 However one stat left out was Penetration, it morphed into the %-based armor penetration and spell penetration was done nothing with.
@@ -37,3 +40,9 @@ This is the biggest reason why magic based dps dominate early tiers while physic
 On the other hand magic users have no penetration for PvE, but bosses still have 15 magic resistance based on level that a Player can't do anything about.  
 *If I can't affect or interact with a mechanic it should not be in the game!*  
 I want to unify armor and spell resistance, so that all players for all kinds of damage can stack penetration.
+
+### Pets
+All pets will gain 100% of the owners Powers, Penetration, Haste, Critical and Hit/Expertise rating.
+
+# Balance
+Dps output will be balanced once all game mechanics have been finished.
