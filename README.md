@@ -61,7 +61,8 @@ If all things were equal between two players, except having twice the power as t
 I want to create an npc which offers semi Reforging capabilities, for now only limited to trinkets such that the special effect can be tuned between random proc with cooldown, on use with cooldown or flat constant damage.  
 
 Implemented as a priced quest rewarding something like this
-https://imgur.com/a/414eID4
+https://imgur.com/a/414eID4  
 
+Either this or removing DoT snapshotting.
 # Balance
 Dps output will be balanced once all game mechanics have been finished.
