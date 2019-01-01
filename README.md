@@ -15,3 +15,25 @@ Code is here https://github.com/PolarCookie/TrinityCore/tree/3.4.0+
 > Shadowflame triggering Everlasting Affliction is something I wish I had in many cases. Affliction AoE has been limited to either SoC, boring as previously mentioned, or tab casting Corruption on all targets which is a slow, tedious and difficult task to get right. No other class has any AoE rotation as intricate as affli multidotting on 4+ targets.
 + **Shadow Bite** is an On-Next-Auto-Attack type spell, like Heroic Strike.
 > This is in preperation for later pet changes where all pets will get 100% haste, crit, penetration, hit/expertise ratings from their masters. It is not neccesary that Felhunter should do a physical melee attack, and it's asymmetrical as the melee attack suffers from armor and glancing blows.
+
+# Future work
+## Stat system
+### Level based stats
+Primary stats gained each level will be removed, you will gain your stats from gear. Base hp/mana is being kept for the time being but under consideration.
+### Crit chance
+Racial and int/agi based crit chance will be removed, leaving only crit chance from rating which comes from gear.
+
+### Strength, Agility and Spirit
+What is Strength, Agility and Spirit? It depends a lot on which class you pick. In general Strength and Agility ends up being just varying degrees of Attack Power, but Agility is also Critical Chance and Armor, and Strength is also Block Value and Parry (only for DK). Spirit is a total mess, it started out as the OOC regeneration stat, but not fighting is boring so blizzard tried to push it into classes where it didn't belong. First it was %-spirit-to-mp5 (when the mp5 stat was already a thing) and %-spirit-to-power for Priest and Druids. In Wrath it snuck its way to dps speccs as Blizzard wanted to make healer/caster gear interchangable without giving up Spirit. The curious thing about Wrath itemization is how many items for dps classes have spirit on them in T7 and T8, and by T10 Blizzard gave up on the whole idea and gave all caster dps Crit/Haste/Hit on all tier sets.  
+The idea of a class-unique stat eventually turned into Mastery, but I never liked the idea of Mastery either.  
+*Classes should be differentiated with spells and talents, all stats should be equal across all classes*  
+These 3 stats are to be removed and replaced by pure stats doing 1 job and 1 job only.  
+
+### Penetration
+WotLK saw great unification in the stat system; haste/spell hast, crit/spell crit and hit/spell hit were all unified into a single secondary statistic, as the TBC model was severely harming hybrid spec.
+However one stat left out was Penetration, it morphed into the %-based armor penetration and spell penetration was done nothing with.
+This is the biggest reason why magic based dps dominate early tiers while physical dps catch up hard in T10 as ARP is a increased returns kind of stat.
+
+On the other hand magic users have no penetration for PvE, but bosses still have 15 magic resistance based on level that a Player can't do anything about.  
+*If I can't affect or interact with a mechanic it should not be in the game!*  
+I want to unify armor and spell resistance, so that all players for all kinds of damage can stack penetration.
