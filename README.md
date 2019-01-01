@@ -42,7 +42,8 @@ On the other hand magic users have no penetration for PvE, but bosses still have
 I want to unify armor and spell resistance, so that all players for all kinds of damage can stack penetration.
 
 ### Pets
-All pets will gain 100% of the owners Powers, Penetration, Haste, Critical and Hit/Expertise rating.
+All pets will gain 100% of the owners Powers, Penetration, Haste, Critical and Hit/Expertise rating.  
+Pets will not gain any buffs, but inherit any buffs cast on the player, pets are considered an extension to the player character.
 
 ## Spell Scaling
 Since the beginning all spells worked on the model of `damage = base + coefficient * power`
