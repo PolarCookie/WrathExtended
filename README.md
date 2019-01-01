@@ -48,7 +48,7 @@ All pets will gain 100% of the owners Powers, Penetration, Haste, Critical and H
 Since the beginning all spells worked on the model of `damage = base + coefficient * power`
 This equation quickly becomes convoluted with modifying talents to either total damage or coefficient.  
 See https://web.archive.org/web/20100807225410/http://elitistjerks.com/f80/t37900-dots_you_affliction_warlock_thread/, search for "DPS and DPCT spell by spell".  
-A break from this happenend with DKs; their diseases damage is only only based on Attack Power. Continuing on this idea every spell for all classes will be changed to remove the base component and all talents modifying spells on total damage % will be changed to modify the coefficient instead.
+A break from this happenend with DKs; their diseases damage is only based on Attack Power. Continuing on this idea every spell for all classes will be changed to remove the base component and all talents modifying spells on total damage % will be changed to modify the coefficient instead.
 
 This stems from a pet peeve of mine; I play Affliction Warlock very well, so well that I usually end up dominating damage done in T7 and T8. Some warlocks are not as talented, and I've seen a lot of them out there. Neither do they seem to even *want* to git gud and when you try to point out that they are playing the strongest spec in T7 wrong (i.e. they are literally at the bottom of the meters), the usually reply is "Ye?! well you just outgear me!!"  
 Bitch, I'm doing 4 times your damage yet I don't have 4 times your gear, not even 2 times your spell power, you just suck.  
