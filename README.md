@@ -58,7 +58,10 @@ If all things were equal between two players, except having twice the power as t
 ## Trinkets
 10sec/45cooldown on spell cast chance trinkets are all over the place in Wotlk, as a caster I have 4 procs to watch for (2 trinkets, tailoring cloak enchant and Eradication). I can't control when any of them happen, I can't line them up in any consistent meaningful way and I can't do much with them when it happens. Only on Drain Soul execute do I consider recasting when something procs.  
 
-I want to create an npc which offers semi Reforging capabilities, for now only limited to trinkets such that the special effect can be tuned between random proc with cooldown, on use with cooldown or flat constant damage.
+I want to create an npc which offers semi Reforging capabilities, for now only limited to trinkets such that the special effect can be tuned between random proc with cooldown, on use with cooldown or flat constant damage.  
+
+Implemented as a priced quest rewarding something like this
+https://imgur.com/a/414eID4
 
 # Balance
 Dps output will be balanced once all game mechanics have been finished.
