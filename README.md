@@ -86,7 +86,7 @@ I haven't played this class much, I'd take away Savage Defense and instead give 
 Let me start by saying that Blood as the tank spec was a mistake from the beginning, FROST IS THE REAL TANK SPEC!  
 Both specs suffer by playing more or less like their dps counterparts, except for the added rune strikes.  
 
-Frost I want to give a 1 unholy/1 frost Frost Barrier ability, its main active mitigation will be absorbs and this will compete with Obliterate for threat.  
+Frost I want to give a Frost Barrier ability, its main active mitigation will casing itself in ice and absorbing damage.
 
 Blood in general has one major issue and that is self healing; the holy trinity is tank, dps and healer, or durability, damage and healing. Balance would suggest pick 2 of 3, Blood is greedy and takes all 3!  
 
