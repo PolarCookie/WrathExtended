@@ -64,5 +64,31 @@ Implemented as a priced quest rewarding something like this
 https://imgur.com/a/414eID4  
 
 Either this or removing DoT snapshotting.
+
+# Classes
+## Tanks
+I miss active mitigation for tanks, TBC Protection Warrior being my favorite tank to play. Threat is a joke in WotLK unless the tank is garbage (and I've seen a WotLK Prot Warrior refuse to use Heroic Strike, and he did fine for the *most* part), this is in part that tanks only produce threat with the rare occasional defensive ability. Having to juggle threat and defense takes mind space which gives tanks their meaningful edge to seperate good from bad.  
+
+### Protection Warrior
+Shield Block will be the active defensive ability with 6 seconds cooldown and 8 seconds duration, the effect will be only to increase block value; maxing block chance only devalues block rating on gear.  
+
+Sword And Board will lose it's random proc chance, this is my biggest gripe with Wrath Protection Warrior that ruins the spec for me, even tho I consider Warbringer to be the single best talent Blizzard ever made. I just don't like the random interruption of *flow* which I highly adore TBC Protection Warrior for.  
+
+I want to add/change a talent to Protection Warrior letting block value mitigate spell damage.
+
+### Protection Paladin
+I haven't played this class much, but the one thing I know is that Argent Defender is getting nerfed hard.
+
+### Feral Druid
+I haven't played this class much, I'd take away Savage Defense and instead give Brace; increasing your hp to tank a big hit while at the same time increasing hp received. Druids should be big meat shields getting loads of healing.
+
+### Death Knight
+Let me start by saying that Blood as the tank spec was a mistake from the beginning, FROST IS THE REAL TANK SPEC!  
+Both specs suffer by playing more or less like their dps counterparts, except for the added rune strikes.  
+
+Frost I want to give a 1 unholy/1 frost Frost Barrier ability, its main active mitigation will be absorbs and this will compete with Obliterate for threat.  
+
+Blood in general has one major issue and that is self healing; the holy trinity is tank, dps and healer, or durability, damage and healing. Balance would suggest pick 2 of 3, Blood is greedy and takes all 3!  
+
 # Balance
 Dps output will be balanced once all game mechanics have been finished.
