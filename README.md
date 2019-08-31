@@ -92,3 +92,9 @@ Blood in general has one major issue and that is self healing; the holy trinity 
 
 # Balance
 Dps output will be balanced once all game mechanics have been finished.
+
+# Raid Size and in General
+The default raid size will be 30 people, 10 man will probably be scrapped.  
+25 people was fine for TBC because class buffs were only group wide, so if a key support class wasn't there one day only 4 guys got shafted. With class buffs being raid wide losing a key support class is devastating, therefore the ideal raid comp needs to be balanced around having 2 of every support class for redundancy in case either player has something come up IRL, and it happens sometimes. Having only 25 raid members is very little room for this idea.  
+On the flip side I want to reduce the number of support classes, or de-homogenize them; the support they bring is unique and can't be gained elsewhere, f.ex. only shadow priests will be a mana battery like in the good old days. https://www.dalaran-wow.com/forums/community/general-discussion/topic/2149/the-comprehensive-list-of-raid-buffs-debuffs none of this bullshit.  
+I'm not a hardliner for the "hybrid tax", but some classes will not be designed with a pure competitive dps spec in mind.
