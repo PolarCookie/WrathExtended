@@ -66,6 +66,14 @@ https://imgur.com/a/414eID4
 Either this or removing DoT snapshotting.
 
 # Classes
+## Healers
+### Disc Priest
+The Legion Disc Priest was fun but the wrong way to take that class, it should be focused into the "shield" healer. It needs something more to do than just clicking PW:S through the raid, but not much. In general all absorb effects will be changed to <100% damage absorbed for a total of X; this is to synergize better with other healers and to give disc the niche of being the healer that smooths out rough edges but not completely invalidate bringing another raid healer.  
+Applying PW:S, or a different shield spell, raid wide should be made quicker, perhaps lowering the GCD to 1 second baseline. Penance will be changed from a healing/damage spell to a "buff PW:S"/damage spell with no cooldown. The way Disc priest will heal is through Renew picking up the damage that passes through the shield.
+
+### Holy Paladin
+Beacon of Light is getting the axe! It completely breaks the healing game in fundamental ways. Healers should apply healing where their focus is, in general all random "smart" healing procs will be removed, thus if healers collectively lose focus one a prime target that's taking damage he's going to die! A good example of why BoL is broken is Gurtogg Bloodboil in Black Temple; he will first stack a damaging debuff on tanks, then switch to a phase where he targets a random raid member who needs all the healers focus to stay alive, except that the tanks are still taking damage from the stacked debuff! If all the healers switch to the focused raid member the tanks will die from the debuff, but if you bring 2 hpalas and each set their beacon to the tank the focus phase is now trivial!
+
 ## Tanks
 I miss active mitigation for tanks, TBC Protection Warrior being my favorite tank to play. Threat is a joke in WotLK unless the tank is garbage (and I've seen a WotLK Prot Warrior refuse to use Heroic Strike, and he did fine for the *most* part), this is in part that tanks only produce threat with the rare occasional defensive ability. Having to juggle threat and defense takes mind space which gives tanks their meaningful edge to seperate good from bad.  
 
