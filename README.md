@@ -1,6 +1,8 @@
 # WrathExtended
 Patch 3.4 and onwards, a thought experiment what could have been.  
-Code is here https://github.com/PolarCookie/TrinityCore/tree/3.4.0+
+Code is here https://github.com/PolarCookie/TrinityCore/tree/3.4.0+  
+
+Keywords; Class Diversification, Item/Stat homogenization!
 
 # Patch 3.4
 ## Classes
@@ -55,6 +57,13 @@ This stems from a pet peeve of mine; I play Affliction Warlock very well, so wel
 Bitch, I'm doing 4 times your damage yet I don't have 4 times your gear, not even 2 times your spell power, you just suck.  
 If all things were equal between two players, except having twice the power as the other guy, you still won't do twice his damage because of the base component to spells.
 
+# Items
+You will only be able to equip 1 (ONE) trinket, I want this slot to be the highly discussed slot what to bring, you're going to have to make a hard choice.  
+
+Secondary weapons/relics/tomes/totems will be removed; I'm more in favour of class specific trinkets.
+Casters won't have Wands, Warriors won't be able to equip bows and Hunters won't have melee weapons, and so forth.
+Wands were crutches around badly designed gameplay and are never used for anything in WotlK except level 5-29(ish) leveling, they are boring stat sticks!
+
 ## Trinkets
 10sec/45cooldown on spell cast chance trinkets are all over the place in Wotlk, as a caster I have 4 procs to watch for (2 trinkets, tailoring cloak enchant and Eradication). I can't control when any of them happen, I can't line them up in any consistent meaningful way and I can't do much with them when it happens. Only on Drain Soul execute do I consider recasting when something procs.  
 
@@ -63,7 +72,7 @@ I want to create an npc which offers semi Reforging capabilities, for now only l
 Implemented as a priced quest rewarding something like this
 https://imgur.com/a/414eID4  
 
-Either this or removing DoT snapshotting.
+Either this or removing DoT snapshotting.  
 
 # Classes
 ## Healers
