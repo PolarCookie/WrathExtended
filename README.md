@@ -4,19 +4,130 @@ Code is here https://github.com/PolarCookie/TrinityCore/tree/3.4.0+
 
 Keywords; Class Diversification, Item/Stat homogenization!
 
-# Patch 3.4
-## Classes
-### Warlock
-+ **Pandemic** now applies crit ability to Curse of Agony, Drain Life and Drain Soul, applies crit buff to Seed of Corruption
-> CoA, Drain Life and Drain Soul not critting is an asymmetry which severly hurts crit rating for affliction warlocks, where crit/spirit gear becomes garbage to be avoided. Same with the crit multiplier not being present on SoC.
+# Design Philosophy (in no particular order)
+1) If A counters B, then B can not counter A, you need a C to counter A and B might counter C.
+2) Stats need to matter, you can't have a situation where ~35% of a class' total damage output is unaffected by critical chance as is the general case for Affliction Warlocks.
+3) Make gear matter more by removing all passive stat modifiers from talent trees, also buffing stats from gear to compensate.
+4) Make buffs more unique and rare, not everyone has one.
+5) Make dots more unique and rare, not everyone has one.
+6) The aim of this project is not to make WotLK with some tweaks but to make as many corrections to the underlying fundamental problems of the game. To Redesign it from scratch as much as possible.
+7) the overspecialization of talents will be changed; you shouldn't need to put more than 31 points into your main talent tree leaving 20 points free elsewhere (the ratio is important, not the real numbers).
+8) Classes will have less abilities and do more with them
+9) Tanks will not be able to hold agro on dps in heavy AoE.
+10) Parry will be removed, it's redundant as avoidance when dodge exists and it's only purpose then is to randomly kill the tank which is not very interesting. By default of this decision tank single target threat will increase and we'll balance it down accordingly.
+11) If a mechanic is in the game, I as a player should be able to build around it in some way, if I can't interact with a game mechanic, it should not exist. Level based partial resists and glancing blows are to be removed from the game because of this.
+12) We're assuming people have good ping, many CC abilities will be heavily nerfed; no more 10 sec stuns or 8 sec silences.
 
-+ **Seed of Corruption** now is a single target AoE DoT.
-> I personally find the 3.3.5 SoC to be incredibly boring, all you do is spam or spam-tab and pray tanks can hold agro. It doesn't synergise nicely with anything in the warlock arsenal, except Shadowflame if you want to trigger them. It is a massive break from the usuall affliction rotation of managing DoTs and debuffs. It belongs to a spec designed around building up damage potential which is later triggered, not affliction which ramps up steady non-burst damage. This new version is a mirror to regular Corruption except that the damage is AoE. The envisioned AoE rotation will be SoC, run towards the enemies while spreading regular Corruption, Shadowflame (which will now trigger Everlasting Affliction) and then tab casting SB/haunt to keep up all dots.
-+ **Glyph of Quick Decay** now affects Seed of Corruption.
-+ **Everlasting Affliction** now refreshes Seed of Corruption and can be triggered by Shadowflame.
+# Classes (in no particular order)
+## Shaman
+### Totems
+Each shaman will now only use 1 totem at a time; in Vanilla and TBC each class buff was group wide and fairly unique but in WotLK all buffs are now raid wide and heavily homogenized. This leads to a situation where the only totem that matters is Wrath of Air as every other are either negligible weak (lol Healing Stream Totem), situational (Earthbind totem, resistance totems) or redundant (the rest of them).
+### Elemental Spirits
+Elemental guardians will be unchained from totems and work as a regular guardian cooldown (like Shadow Fiend or mage Water elemental). They will share cooldown. Fire Elemental Spirit will be for dps, Earth Elemental Spirit as a semi tank and shield buff, Air Elemental Spirit will do moderate damage and knock everyone randomly around the place with strong gust of winds; it will be used to break and disrupt enemy groups in pvp, Water Elemental Spirit will be assisting in Healing.
+### Restoration
+I want resto shaman to be the smart proc healer, to build into the mechanic of Chain Healing. This will be done through buffing Healing Stream Totem significantly. This will conflict with the 1 totem rule by design.
+While the total HPS will be less than other classes, resto shamans will be needed to ease the overall burden, along with disc priests, on the other healers by being able to rapidly reach more targets than the others can.
+### Enhancement
+I don't have any thoughts at this point
+### Elemental
+Will stay mostly the same, but Totem of Wrath will now function as Demonic Pact which will be removed.
+
+## Priest
+### Holy
+Renew will be removed, in favour of making rdruid the more unique HoT healer. 
+### Discipline
+The Legion Disc Priest was fun but the wrong way to take that class, it should be focused into the "shield" healer. It needs something more to do than just clicking PW:S through the raid, but not much. In general all absorb effects will be changed to <100% damage absorbed for a total of X; this is to synergize better with other healers and to give disc the niche of being the healer that smooths out rough edges but not completely invalidate bringing another raid healer.  
+Applying PW:S, or a different shield spell, raid wide should be made quicker, by lowering the GCD to 1 second baseline.
+### Shadow
+I think it was a mistake to have the light/shadow duality in priests, it would have been better to make a holy damage dps spec and leave the shadow dot caster to affliction warlocks. Short of that Spriests will return to the TBC model of gaining mana based on damage done, vampiric embrace will be removed as healing is reserved for healers.
+
+## Paladin
+### Holy
+Beacon of Light is getting the axe! It completely breaks the healing game in fundamental ways. Healers should apply healing where their focus is, in general all random "smart" healing procs will be removed (except for rshaman), thus if healers collectively lose focus on a prime target that's taking damage he's going to die! A good example of why BoL is broken is Gurtogg Bloodboil in Black Temple; he will first stack a damaging debuff on tanks, then switch to a phase where he targets a random raid member who needs all the healers focus to stay alive, except that the tanks are still taking damage from the stacked debuff! If all the healers switch to the focused raid member the tanks will die from the debuff, but if you bring 2 hpalas and each set their beacon to the tank the focus phase is now trivial!
+
+### Protection
+Argent Defender is removed; it's to OP, Divine Guardian/Sacrifice is expanded upon, Sacred Shield is removed; if you want a shield bring a disc priest. Prot Paladin will stay as the best AoE tanks but AoE tank threat in general will be nerfed. In general I want more active mitigation from tanks so both cooldown and duration of Holy Shield is reduced to 6 seconds.
+
+### Retribution
+It's ok I guess?
+
+## Warrior
+Warriors are supposed to be a high mobility melee fighter, charge will be useable in any stance and in combat but hamstring and piercing howl will be removed. One major change is that switching stances will not change rage at all, this design decision never made sense to me. I want to experiement with reducing rage cost on all warrior abilities by 50%, you can rage starve yourself to easially and I want to look into this.
+
+### Protection
+I miss active mitigation for tanks, TBC Protection Warrior being my favorite tank to play. Threat is a joke in WotLK unless the tank is garbage (and I've seen a WotLK Prot Warrior refuse to use Heroic Strike, and he did fine for the *most* part), this is in part that tanks only produce threat with the rare occasional defensive ability. Having to juggle threat and defense takes mind space which gives tanks their meaningful edge to seperate good from bad.  
+
+Shield Block will return to the Vanilla/TBC version of +75% block chance for 2 hits, 6 sec duration on 5 sec cooldown.
+
+Sword And Board will lose it's random proc chance, this is my biggest gripe with Wrath Protection Warrior that ruins the spec for me, even tho I consider Warbringer to be the single best talent Blizzard ever made. I just don't like the random interruption of *flow* which I highly adore TBC Protection Warrior for.  
+
+Shockwave will be removed, Thunder Clap will reduce melee attack speed by max 10% talented and demoralizing shout will reduce damage by 5%
+
+I want to add a talent to Protection Warrior letting block value mitigate spell damage.
+
+### Fury
+WotLK fury gameplay is decent and will remain but some balancing will be done, especially wrt ARP
+
+### Arms
+Bladestorm will be removed, instead some mechanic will reduce the cooldown on normal whirlwind.
+
+## Druid
+### Feral dps
+Other than being a very restricted talent build feral gameplay is mostly fine as is, but it's trying to spin to many plates giving inconsistent results. At least 1 ability from the rotation will be removed and shred will be able to hit from any angle (why this change was given to mutilate but not shred has always been a mystery to me).
+
+### Feral tank
+Savage defense didn't work out very well imo, in the spirit of active mitagation i'd rather have an ability that increases your healing taken while it's up; Bears should be big meat shields taking huge hits but also soaking a lot of healing.
+
+### Restoration
+In the beginning there was Rejuvenation and Regrowth, then Lifebloom in TBC and Wild Growth in WotLK. How many HoTs does a spec really need? Wild Growth server a purpose in being the rapid raid wide healing but Lifebloom never contributed anything other than being an extra button and horribly imbalanced in pvp.
+In the spirit of doing more with less RDruids will focus on Rejuv (HoT), Nourish (casted healing with bonus on HoT'ed targets), Swiftmend (instant healing on HoT'ed targets) and Wild Growth (multitarget HoT). The rest will be phased out if not completly removed.
+
+### Balance
+Moonkins biggest issue is the inconsistency due to Eclipse, will be considered.
+
+## Death Knight
+Let me start by saying that Blood as the tank spec was a mistake from the beginning, FROST IS THE REAL TANK SPEC!  
+Both specs suffer by playing more or less like their dps counterparts, except for the added rune strikes.  
+
+Frost I want to give a Frost Barrier ability, its main active mitigation will casing itself in ice and absorbing damage.
+
+Blood in general has one major issue and that is self healing; the holy trinity is tank, dps and healer, or durability, damage and healing. Balance would suggest pick 2 of 3, Blood is greedy and takes all 3!  
+
+
+## Warlock
+### Affliction
++ **Pandemic** now applies crit ability to Curse of Agony, Drain Life and Drain Soul.
+> CoA, Drain Life and Drain Soul not critting is an asymmetry which severly hurts crit rating for affliction warlocks, where crit/spirit gear becomes garbage to be avoided.
+
++ **Seed of Corruption** now is now removed in favour of focusing on corruption.
+> I personally find the 3.3.5 SoC to be incredibly boring, all you do is spam or spam-tab and pray tanks can hold agro. It doesn't synergise nicely with anything in the warlock arsenal, except Shadowflame if you want to trigger them. It is a massive break from the usual affliction rotation of managing DoTs and debuffs. It belongs to a spec designed around building up damage potential which is later triggered, not affliction which ramps up steady non-burst damage. 
+
++ **Everlasting Affliction** can be triggered by Shadowflame.
 > Shadowflame triggering Everlasting Affliction is something I wish I had in many cases. Affliction AoE has been limited to either SoC, boring as previously mentioned, or tab casting Corruption on all targets which is a slow, tedious and difficult task to get right. No other class has any AoE rotation as intricate as affli multidotting on 4+ targets.
 + **Shadow Bite** is an On-Next-Auto-Attack type spell, like Heroic Strike.
 > This is in preperation for later pet changes where all pets will get 100% haste, crit, penetration, hit/expertise ratings from their masters. It is not neccesary that Felhunter should do a physical melee attack, and it's asymmetrical as the melee attack suffers from armor and glancing blows.
+
+### Demonology
+Demonic Pact is removed, I dunno what to do with this spec tbh?
+
+### Destruction
+Molten Core and Decimation are now Destruction Talents, the former procs on Immolate. Chaos Bolt is removed.
+
+## Mage
+### Arcane
+Fine as is
+
+### Frost
+Water Elemental is now a Shaman spell, sorry guys!
+
+### Fire
+Living Bomb is now the new Seed of Corruption, it fits better thematically for Fire to be creating bombs and blowing them up.
+
+## Rogue
+In the spirit of not allowing anyone to counter their counter I'm removing all stuns, slows and Cloak of Shadow from Rogues, but in exchange Vanish has a 20 sec cooldown (subtlety gets 10). The Spirit of Rogue combat is to pick your fights and escape before you get killed, you ambush people, fight 10 seconds, and run away, repeat. Being able to stunlock someone for up to 10 seconds is first of highly unbalanced, unfair and unfun (for the other guy)! All stuns in general are being heavily nerfed to max 2-3 seconds as people's pings are much better now and we're designing a game with that in mind. Cloak of Shadow was the answer to the issue that rogues vanishing were being countered by DoTs, because DoTs could break stealth. Now Stealth will now only be broken by spell hits and DoT ticks will not break it, the rogue still has to deal with soon dying however.
+Rogue will keep Gouge and Blind as these will break if you continue damaging the target.
+
+The Rogue specs are mostly fine as is w.r.t. gameplay but they will be rebalanced with the design philosophy.
 
 # Future work
 ## Stat system
@@ -73,39 +184,6 @@ Implemented as a priced quest rewarding something like this
 https://imgur.com/a/414eID4  
 
 Either this or removing DoT snapshotting.  
-
-# Classes
-## Healers
-### Disc Priest
-The Legion Disc Priest was fun but the wrong way to take that class, it should be focused into the "shield" healer. It needs something more to do than just clicking PW:S through the raid, but not much. In general all absorb effects will be changed to <100% damage absorbed for a total of X; this is to synergize better with other healers and to give disc the niche of being the healer that smooths out rough edges but not completely invalidate bringing another raid healer.  
-Applying PW:S, or a different shield spell, raid wide should be made quicker, perhaps lowering the GCD to 1 second baseline. Penance will be changed from a healing/damage spell to a "buff PW:S"/damage spell with no cooldown. The way Disc priest will heal is through Renew picking up the damage that passes through the shield.
-
-### Holy Paladin
-Beacon of Light is getting the axe! It completely breaks the healing game in fundamental ways. Healers should apply healing where their focus is, in general all random "smart" healing procs will be removed, thus if healers collectively lose focus one a prime target that's taking damage he's going to die! A good example of why BoL is broken is Gurtogg Bloodboil in Black Temple; he will first stack a damaging debuff on tanks, then switch to a phase where he targets a random raid member who needs all the healers focus to stay alive, except that the tanks are still taking damage from the stacked debuff! If all the healers switch to the focused raid member the tanks will die from the debuff, but if you bring 2 hpalas and each set their beacon to the tank the focus phase is now trivial!
-
-## Tanks
-I miss active mitigation for tanks, TBC Protection Warrior being my favorite tank to play. Threat is a joke in WotLK unless the tank is garbage (and I've seen a WotLK Prot Warrior refuse to use Heroic Strike, and he did fine for the *most* part), this is in part that tanks only produce threat with the rare occasional defensive ability. Having to juggle threat and defense takes mind space which gives tanks their meaningful edge to seperate good from bad.  
-
-### Protection Warrior
-Shield Block will be the active defensive ability with 6 seconds cooldown and 8 seconds duration, the effect will be only to increase block value; maxing block chance only devalues block rating on gear.  
-
-Sword And Board will lose it's random proc chance, this is my biggest gripe with Wrath Protection Warrior that ruins the spec for me, even tho I consider Warbringer to be the single best talent Blizzard ever made. I just don't like the random interruption of *flow* which I highly adore TBC Protection Warrior for.  
-
-I want to add/change a talent to Protection Warrior letting block value mitigate spell damage.
-
-### Protection Paladin
-I haven't played this class much, but the one thing I know is that Argent Defender is getting nerfed hard.
-
-### Feral Druid
-I haven't played this class much, I'd take away Savage Defense and instead give Brace; increasing your hp to tank a big hit while at the same time increasing hp received. Druids should be big meat shields getting loads of healing.
-
-### Death Knight
-Let me start by saying that Blood as the tank spec was a mistake from the beginning, FROST IS THE REAL TANK SPEC!  
-Both specs suffer by playing more or less like their dps counterparts, except for the added rune strikes.  
-
-Frost I want to give a Frost Barrier ability, its main active mitigation will casing itself in ice and absorbing damage.
-
-Blood in general has one major issue and that is self healing; the holy trinity is tank, dps and healer, or durability, damage and healing. Balance would suggest pick 2 of 3, Blood is greedy and takes all 3!  
 
 # Balance
 Dps output will be balanced once all game mechanics have been finished.
